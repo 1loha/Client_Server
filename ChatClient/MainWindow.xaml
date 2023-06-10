@@ -5,15 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChatClient"
         mc:Ignorable="d"
-        Title="Чат" Height="350" Width="525" Closing="Window_Closing">
+        Title="MainWindow" Height="350" Width="525" Closing="Window_Closing">
     <Grid>
-        <TextBox x:Name="tbUserName" LostFocus="tbUserName_GotFocus" HorizontalAlignment="Left" Height="29" Margin="172,10,0,0" TextWrapping="Wrap" MaxLength="25" VerticalAlignment="Top" Width="335"/>
-        <TextBox Name="watermarkedName" GotFocus="watermarkedName_GotFocus" Text="Имя пользователя" HorizontalAlignment="Left" Height="29" Margin="172,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="335"/>
-        <Button x:Name="bConnDicon" Click="Button_Click" Content="Подключиться" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="147" Height="29"/>
+        <TextBox x:Name="tbUserName" HorizontalAlignment="Left" Height="29" Margin="172,10,0,0" TextWrapping="Wrap" Text="Имя юзера" VerticalAlignment="Top" Width="335"/>
+        <Button x:Name="bConnDicon" Click="Button_Click" Content="Connect" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="147" Height="29"/>
         <ListBox x:Name="lbChat" HorizontalAlignment="Left" Height="181" Margin="10,44,0,0" VerticalAlignment="Top" Width="497"/>
-        <TextBox x:Name="tbMessage" LostFocus="tbMessage_LostFocus" HorizontalAlignment="Left" Height="79" Margin="10,230,0,0" VerticalAlignment="Top" Width="497" KeyDown="tbMessage_KeyDown"/>
-        <TextBox Name="watermarkedTxt" GotFocus="watermarkedTxt_GotFocus" Text="Отправляйте зашифрованные сообщения с символом '/' в начале.                                   Удалить историю - 'cls'" 
-                 TextWrapping="Wrap" HorizontalAlignment="Left" Height="79" Margin="10,230,0,0" VerticalAlignment="Top" Width="497" MaxLength="250"/>
+        <TextBox x:Name="tbMessage" HorizontalAlignment="Left" Height="79" Margin="10,230,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="497" KeyDown="tbMessage_KeyDown"/>
 
     </Grid>
 </Window>

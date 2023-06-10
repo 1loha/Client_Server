@@ -2,15 +2,14 @@
 
 namespace wcf_chat
 {
-    public class ServerUser
-    {
-        // ID пользователя
-        public int ID { get; set; }
 
-        // Имя пользователя
+    internal class ServerUser
+    {
+        public int ID { get; set; }
+        
         public string Name { get; set; }
 
-        // Предоставляет доступ к контексту выполнения метода службы
-        public OperationContext operationContext { get; set; }
+        public OperationContext operationContext{ get; set; }
+
     }
 }
